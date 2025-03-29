@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta title="KAI-web" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAI-web</title>
+    <meta title="Расписание" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание занятий</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/mainForm.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/mainModal.css">
 </head>
 <body>
     <div id="app">
+
         <header class="app-header">
             <img onclick="{ alert('huy') }" src="./assets/images/logo.png" alt="logo">
             <div class="app-header__wrapper">
@@ -57,26 +60,52 @@
                 </ul>
             </div>
             <div class="main-content">
-                <div class="first-block-content">Новости</div>
-                <div class="second-block-content">Мероприятия</div>
+                <div class="main-form">
+                    <div class="main-form-header">
+                        <h2 class="main-form-title">Расписание занятий</h2>
+                        <button class="to-index-btn">
+                            <a href="./index.html">На главную</a>
+                        </button>
+                    </div>
+                    <form>
+                        <label for="section-input">Учебное подразделение</label>
+                        <select class="main-form-input" id="section-input" type="text">
+                            <option selected disabled></option>
+                            <option>1 option</option>
+                            <option>2 option</option>
+                            <option>3 option</option>
+                            <option>4 option</option>
+                            <option>5 option</option>
+                            <option>6 option</option>
+                        </select>
+                        <label for="kafed-input">Курс</label>
+                        <select class="main-form-input" id="kafed-input" type="text">
+                            <option selected disabled></option>
+                            <option>1 курс</option>
+                            <option>2 курс</option>
+                            <option>3 курс</option>
+                            <option>4 курс</option>
+                        </select>
+                        <label for="kafed-input">Группа</label>
+                        <select class="main-form-input" id="kafed-input" type="text">
+                            <option selected disabled></option>
+                            <option>1 option</option>
+                            <option>2 option</option>
+                            <option>3 option</option>
+                            <option>4 option</option>
+                            <option>5 option</option>
+                            <option>6 option</option>
+                        </select>
+                        <button type="button" class="main-action-button">Показать</button>
+                    </form>
+                </div>
             </div>
         </section>
-        <!-- <section>
-            <div class="hotiz-menu">
-                <button class="horiz-menu__btn">
-                    Задолженность<br>по предметам
-                </button>
-                <button class="horiz-menu__btn">
-                    КАИ на карте
-                </button>
-                <button class="horiz-menu__btn">
-                    Задолженность<br>по предметам
-                </button>     
-            </div>
-        </section> -->
-        <footer class="main-footer">
-            footer footer
-        </footer>
+        <section>
+            
+        </section>
     </div>
+
+    <script src="./assets/script/mainModal.js"></script>
 </body>
 </html>
