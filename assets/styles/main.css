@@ -124,3 +124,24 @@ svg path{
     background-color: #fff;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
 }
+.main-action-button{
+    background-color: #6D6DFF;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 20px;
+}
+.to-index-btn{
+    width: 125px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #7C7F7E;
+    border-radius: 5px;
+}
+.to-index-btn a{
+    text-decoration: none;
+    color: #7C7F7E;
+    font-size: 15px;
+}
