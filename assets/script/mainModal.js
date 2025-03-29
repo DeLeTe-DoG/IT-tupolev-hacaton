@@ -237,7 +237,7 @@ let openModal = function() {
         `)
     })
     document.querySelector('.modal-list-item__header').insertAdjacentHTML('beforeend', `
-        <button class="close-modal" type="button">
+        <button onClick={document.getElementById('modal').remove()} class="close-modal" type="button">
             <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8.75903" y="29.9722" width="30" height="5" rx="2.5" transform="rotate(-45 8.75903 29.9722)" fill="#5269FF"/>
                 <rect x="12.4456" y="8.76758" width="30" height="5" rx="2.5" transform="rotate(45 12.4456 8.76758)" fill="#5269FF"/>
