@@ -142,6 +142,11 @@
     align-items: center;
     /* gap: 20px; */
 }
+.rating-bar-wrapper svg{
+    margin-bottom: 7px;
+    width: 30px;
+    height: 30px;
+}
 .rating-bar__title{
     font-size: 16px;
     margin-bottom: 20px;

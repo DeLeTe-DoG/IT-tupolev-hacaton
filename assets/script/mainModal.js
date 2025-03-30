@@ -435,17 +435,17 @@ let openModal = function(type) {
             
             if (i == 0) {
                 document.querySelectorAll('.rating-bar-wrapper')[i].insertAdjacentHTML('afterbegin', `
-                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 14C1 10.134 4.022 7 7.75 7H8.25C11.978 7 15 10.134 15 14C15 17.866 11.978 21 8.25 21H7.75C4.022 21 1 17.866 1 14Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M6.5 12.118C6.58 11.333 7.108 11 7.658 11H8.324C8.874 11 9.401 11.333 9.481 12.118C9.50538 12.3721 9.50538 12.6279 9.481 12.882C9.432 13.36 8.854 13.909 8.854 13.909L8 14.5C8 14.5 6.5 15.5 6.5 16.5C6.5 17.04 6.937 17 7.477 17H9.481M9.56 1L7 6.898M14 1L11.179 7.5M6.44 1L8 4.594M2 1L4.821 7.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8C1 4.134 4.022 1 7.75 1H8.25C11.978 1 15 4.134 15 8C15 11.866 11.978 15 8.25 15H7.75C4.022 15 1 11.866 1 8Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.5 6.118C6.58 5.333 7.108 5 7.658 5H8.324C8.874 5 9.401 5.333 9.481 6.118C9.50538 6.37208 9.50538 6.62792 9.481 6.882C9.432 7.36 8.854 7.909 8.854 7.909L8 8.5C8 8.5 6.5 9.5 6.5 10.5C6.5 11.04 6.937 11 7.477 11H9.481" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 `)
             }
             if (i == 2) {
                 document.querySelectorAll('.rating-bar-wrapper')[i].insertAdjacentHTML('afterbegin', `
-                    <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.25 17.75C1.25 12.9175 5.0275 9 9.6875 9H10.3125C14.9725 9 18.75 12.9175 18.75 17.75C18.75 22.5825 14.9725 26.5 10.3125 26.5H9.6875C5.0275 26.5 1.25 22.5825 1.25 17.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.125 15.3975C8.225 14.4163 8.88375 14 9.5725 14H10.405C11.0925 14 11.7512 14.4163 11.8512 15.3975C11.8817 15.7151 11.8817 16.0349 11.8512 16.3525C11.7687 17.1625 11.2138 17.75 10.6138 17.75M10.6138 17.75C11.2138 17.75 11.7687 18.3375 11.8512 19.1475C11.8817 19.4651 11.8817 19.7849 11.8512 20.1025C11.7512 21.0837 11.0925 21.5 10.405 21.5H9.5725C8.88375 21.5 8.225 21.0837 8.125 20.1025M10.6138 17.75H10.5387M11.95 1.5L8.75 8.8725M17.5 1.5L13.9737 9.625M8.05 1.5L10 5.9925M2.5 1.5L6.02625 9.625" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.25 9.75C1.25 4.9175 5.0275 1 9.6875 1H10.3125C14.9725 1 18.75 4.9175 18.75 9.75C18.75 14.5825 14.9725 18.5 10.3125 18.5H9.6875C5.0275 18.5 1.25 14.5825 1.25 9.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.125 7.3975C8.225 6.41625 8.88375 6 9.5725 6H10.405C11.0925 6 11.7512 6.41625 11.8512 7.3975C11.8817 7.7151 11.8817 8.0349 11.8512 8.3525C11.7687 9.1625 11.2138 9.75 10.6138 9.75M10.6138 9.75C11.2138 9.75 11.7687 10.3375 11.8512 11.1475C11.8817 11.4651 11.8817 11.7849 11.8512 12.1025C11.7512 13.0838 11.0925 13.5 10.405 13.5H9.5725C8.88375 13.5 8.225 13.0838 8.125 12.1025M10.6138 9.75H10.5387" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 `)
             }
