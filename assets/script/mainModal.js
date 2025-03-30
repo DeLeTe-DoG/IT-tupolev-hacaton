@@ -418,6 +418,39 @@ let openModal = function(type) {
                 </tr>
             `)
         }
+        for (let i = 0; i < best_users.length; i++) {
+            document.querySelector('.rating-body__bars').insertAdjacentHTML('beforeend', `
+                <div class="rating-bar-wrapper">
+                    <h3 class="rating-bar__title">${best_users[i].name}</h3>
+                    <div id="top-${i + 1}-user" class="rating-bar__bar"></div>
+                </div>
+            `)
+            if (i == 1) {
+                document.querySelectorAll('.rating-bar-wrapper')[i].insertAdjacentHTML('afterbegin', `
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.9284 8.57136L22.4999 14.9999L14.9999 4.28564L7.49986 14.9999L1.07129 8.57136V22.4999C1.07129 23.3524 1.40994 24.17 2.01273 24.7728C2.61553 25.3756 3.43309 25.7142 4.28557 25.7142H25.7141C26.5666 25.7142 27.3842 25.3756 27.987 24.7728C28.5898 24.17 28.9284 23.3524 28.9284 22.4999V8.57136Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                `)
+            }
+            
+            if (i == 0) {
+                document.querySelectorAll('.rating-bar-wrapper')[i].insertAdjacentHTML('afterbegin', `
+                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 14C1 10.134 4.022 7 7.75 7H8.25C11.978 7 15 10.134 15 14C15 17.866 11.978 21 8.25 21H7.75C4.022 21 1 17.866 1 14Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.5 12.118C6.58 11.333 7.108 11 7.658 11H8.324C8.874 11 9.401 11.333 9.481 12.118C9.50538 12.3721 9.50538 12.6279 9.481 12.882C9.432 13.36 8.854 13.909 8.854 13.909L8 14.5C8 14.5 6.5 15.5 6.5 16.5C6.5 17.04 6.937 17 7.477 17H9.481M9.56 1L7 6.898M14 1L11.179 7.5M6.44 1L8 4.594M2 1L4.821 7.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                `)
+            }
+            if (i == 2) {
+                document.querySelectorAll('.rating-bar-wrapper')[i].insertAdjacentHTML('afterbegin', `
+                    <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.25 17.75C1.25 12.9175 5.0275 9 9.6875 9H10.3125C14.9725 9 18.75 12.9175 18.75 17.75C18.75 22.5825 14.9725 26.5 10.3125 26.5H9.6875C5.0275 26.5 1.25 22.5825 1.25 17.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.125 15.3975C8.225 14.4163 8.88375 14 9.5725 14H10.405C11.0925 14 11.7512 14.4163 11.8512 15.3975C11.8817 15.7151 11.8817 16.0349 11.8512 16.3525C11.7687 17.1625 11.2138 17.75 10.6138 17.75M10.6138 17.75C11.2138 17.75 11.7687 18.3375 11.8512 19.1475C11.8817 19.4651 11.8817 19.7849 11.8512 20.1025C11.7512 21.0837 11.0925 21.5 10.405 21.5H9.5725C8.88375 21.5 8.225 21.0837 8.125 20.1025M10.6138 17.75H10.5387M11.95 1.5L8.75 8.8725M17.5 1.5L13.9737 9.625M8.05 1.5L10 5.9925M2.5 1.5L6.02625 9.625" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                `)
+            }
+        }
+
     }
 }
 
