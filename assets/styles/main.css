@@ -5,6 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: .3s;
+    overflow: hidden;
 }
 #app{
     width: 100vw;
@@ -91,8 +92,6 @@ svg{
     height: 100%;
 }
 .first-block-content, .second-block-content{
-    width: 100%;
-    height: 180px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
@@ -176,7 +175,6 @@ svg{
     transform: rotateZ(60deg);
 }
 .footer-gallery-screen{
-    max-height: 100%;
     width: 780px;
     height: 320px;
     overflow: hidden;
@@ -200,6 +198,38 @@ svg{
     background-size: cover;
 }
 
+/* ---------------------------- MAIN CONENT ----------------------------  */
+.first-block-content > h1, .second-block-content > h1 {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.main-screen-img{
+    width: 600px;
+    height: 250px;
+    margin: 20px;
+    background-color: rgb(242, 126, 126);
+    border-radius: 8px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+.main-screen-img > h1{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+}
+.main-index-conent{
+    width: 600px;
+    position: relative;
+    transition: .3s;
+}
+#main-outline-screen{
+    width: 700px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
 /* ---------------------------- NEWSPAPER ----------------------------  */
 .news-wings{

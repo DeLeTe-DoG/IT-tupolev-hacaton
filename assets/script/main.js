@@ -35,3 +35,13 @@ rightBtn.addEventListener('click', () => {
     rightBtn.setAttribute('href', `#${currentItem}`)
     console.log(currentItem)
 })
+
+
+// main index actions
+let mainScreen = document.querySelector('#main-screen-action')
+
+
+let count = 5
+for (i = 0; i < count; i++) {
+    mainScreen.innerHTML += `<div class="main-screen-img"><h1>Some txt</h1></div>`
+}
