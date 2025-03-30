@@ -5,6 +5,7 @@
     background-color: rgb(0, 0, 0, 0.7);
     padding: 50px;
     overflow-y: scroll;
+    z-index: 10;
 }
 
 .modal-lists__wrapper{
@@ -119,4 +120,73 @@
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+/* RATING BARS BLOCK */
+.rating-body__bars{
+    margin: 0 auto;
+    margin-top: 70px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7482FF;
+}
+.rating-bar-wrapper{
+    width: 200px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px; */
+}
+.rating-bar-wrapper svg{
+    margin-bottom: 7px;
+    width: 30px;
+    height: 30px;
+}
+.rating-bar__title{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.rating-bar__bar{
+    width: 50px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+#top-1-user{
+    height: 120px;
+    background-color: #D7DDF9;
+}
+#top-2-user{
+    height: 160px;
+    background-color: #D8DB1D;
+}
+#top-3-user{
+    height: 80px;
+    background-color: #C08E30;
+}
+
+/* TEACHERS */
+.modal-teacher-name{
+    margin-bottom: 10px;
+}
+.modal-teacher-lesson{
+    font-weight: 500;
+}
+.modal-list-item-teacher{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.modal-list-item-teacher:last-child{
+    margin: 0;
 }

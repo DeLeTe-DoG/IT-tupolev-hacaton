@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/mainForm.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/mainModal.css">
 </head>
 <body>
     <div id="app">
@@ -44,13 +45,15 @@
                             <option>5 option</option>
                             <option>6 option</option>
                         </select>
-                        <button class="main-action-button">Показать</button>
+                        <button onclick="openModal('teachers')" type="button" class="main-action-button">Показать</button>
+                        <!-- <button class="main-action-button">Показать</button> -->
                     </form>
                 </div>
             </div>
         </section>
     </div>
 
+    <script src="./assets/script/mainModal.js"></script>
     <script src="./assets/script/elements/header.js"></script>
     <script src="./assets/script/elements/nav.js"></script>
 </body>

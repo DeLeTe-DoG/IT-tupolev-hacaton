@@ -231,6 +231,43 @@ svg{
     white-space: nowrap;
 }
 
+/* ZACHETKA KEYBOARD */
+.input-wrapper{
+    width: max-content;
+    height: max-content;
+    position: relative;
+}
+.numbers-keyboard{
+    /* display: grid; */
+    display: none;
+    grid-template-columns: repeat(3, max-content);
+    position: absolute;
+    top: 60px;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+.numbers-keyboard button{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+}
+.visible-keypad{
+    display: grid;
+}
+#doc-id{
+    z-index: 1;
+}
+
+
+/* IFRAME STYLES */
+
+.map-frame{
+    width: 100%;
+    height: 50vh;
+    border-radius: 8px;
+}
 /* ---------------------------- NEWSPAPER ----------------------------  */
 .news-wings{
     font-size: 40px;

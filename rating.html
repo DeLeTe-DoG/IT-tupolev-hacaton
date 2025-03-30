@@ -63,7 +63,13 @@
                             <option>6 option</option>
                         </select>
                         <label for="doc-id">Номер зачётки</label>
-                        <input id="doc-id" class="main-form-input">
+                        <div class="input-wrapper">
+                            <input onclick="document.querySelector('.numbers-keyboard').classList.toggle('visible-keypad')" id="doc-id" class="main-form-input">
+
+                            <div class="numbers-keyboard">
+                            
+                            </div>
+                        </div>
                         <button onclick="openModal('rating')" type="button" class="main-action-button">Показать</button>
                     </form>
                 </div>
@@ -71,6 +77,35 @@
         </section>
     </div>
 
+    <script>
+        for (let i = 1; i <= 10; i++) {
+            if (i !== 10) document.querySelector('.numbers-keyboard').insertAdjacentHTML('beforeend', `
+                <button class="keypad-btn" id="${i}" type="button">${i}</button>
+            `)
+            if(i == 10) document.querySelector('.numbers-keyboard').insertAdjacentHTML('beforeend', `
+                <button disabled></button>
+                <button class="keypad-btn" id="0" type="button">0</button>
+                <button disabled></button>
+            `)
+            // console.log(i)
+            // document.querySelectorAll('.keypad-btn')[i].addEventListener('click', () => {
+            //     document.getElementById('doc-id').value += `${i}`
+            // })
+        }
+        document.querySelectorAll('.keypad-btn').forEach(el => {
+            el.addEventListener('click', () => {
+                document.getElementById('doc-id').value += `${el.getAttribute('id')}`
+            })
+        })
+        document.addEventListener('click', e => {
+            let target = e.target
+            // let item_one = document.getElementById("doc-id")
+            let item_two = document.querySelector(".numbers-keyboard")
+            if (target == item_two) {
+                item_two.remove()
+            }
+        })
+    </script>
     <script src="./assets/script/mainModal.js"></script>
     <script src="./assets/script/elements/header.js"></script>
     <script src="./assets/script/elements/nav.js"></script>
