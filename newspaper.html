@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <meta title="Рейтинговая система" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рейтинговая система</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/mainForm.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/mainModal.css">
 </head>
 <body>
-    
+    <div id="app">
+
+        <header class="app-header"></header>
+
+        <div style="padding-top: 52px; width: 100%; height: 100px; display: flex; justify-content: space-between;">
+            <button style="margin-top: 20px;"class="to-index-btn">
+                <a href="./index.html">На главную</a>
+            </button>
+            <h1 class="news-wings">Газета "Крылья"</h1>
+            <div style="width: 125px;"></div>
+        </div>
+        <section style="display: flex;  justify-content: center;align-items: center;" class="main-page-section">
+            <div class="main-content-news">
+                <div class="current-paper">
+                    <div class="current-news-discript">
+                        <h1>Название новости</h1>
+                        <p>Дата события</p>
+                    </div>
+                </div>
+                <div class="current-news-content">
+                    <div class="current-news-text">
+                        <h1>Поприветсвуем первашей</h1>
+                        <p>абабаббабабаasdasdasdasdasd</p>
+                        <p>абабаббабабаasdasdad</p>
+                        <p>абабаббабабаasdadadasdasdasdasd</p>
+                        <p>абабаббабабаasdasd</p>
+                        <p>абабаббабабаasdasdadasad</p>
+                        <p>абабаббабабаasdasdasd</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/script/mainModal.js"></script>
+    <script src="./assets/script/elements/header.js"></script>
 </body>
 </html>
