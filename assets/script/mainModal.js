@@ -394,7 +394,9 @@ let openModal = function(type) {
                     </div>
                 </div>
 
-                <div class="rating-body__bars"></div>
+                <div class="rating-body__bars">
+                    
+                </div>
             </div>
         `)
 
