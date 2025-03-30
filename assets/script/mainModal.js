@@ -283,7 +283,7 @@ for (let i = 0; i < sorted_activ_group.length; i++) {
       };
     };
 };
-console.log(sorted_activ_group)
+// console.log(sorted_activ_group)
 let sorted_group = rating_data
 for (let i = 0; i < sorted_group.length; i++) {
     for (let j = i; j < sorted_group.length; j++) {
@@ -294,7 +294,7 @@ for (let i = 0; i < sorted_group.length; i++) {
       };
     };
 };
-console.log(sorted_group)
+// console.log(sorted_group)
 for (let i = 0; i <= sorted_group.length; i++) {
     if (sorted_group[i]?.name == 'Иванов Н.Е') active_user_place = i + 1
 }
@@ -450,8 +450,15 @@ let openModal = function(type) {
                 `)
             }
         }
-
     }
+
+    document.addEventListener('click', e => {
+        let target = e.target
+        let item_modal = document.querySelector(".modal-lists")
+        if (target == item_modal) {
+            item_modal.remove()
+        }
+    })
 }
 
 // let openModalButton = document.querySelector('.main-action-button')
