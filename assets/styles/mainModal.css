@@ -169,3 +169,24 @@
     height: 80px;
     background-color: #C08E30;
 }
+
+/* TEACHERS */
+.modal-teacher-name{
+    margin-bottom: 10px;
+}
+.modal-teacher-lesson{
+    font-weight: 500;
+}
+.modal-list-item-teacher{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.modal-list-item-teacher:last-child{
+    margin: 0;
+}

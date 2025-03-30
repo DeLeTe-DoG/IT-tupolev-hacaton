@@ -254,6 +254,48 @@ let rating_data = [
         come_rate: 3,
     },
 ]
+let teachers_data = [
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+    {
+        name: 'Погодина Анна Юрьевна',
+        lesson: 'Линейная алгебра и начала математического анализа'
+    },
+]
 
 let active_user = "Иванов Н.Е"
 let active_user_place = 0
@@ -357,6 +399,26 @@ let openModal = function(type) {
                 `)
             })
         }
+    } 
+    if (type == 'teachers') {
+        teachers_data.forEach(item => {
+            document.querySelector('.modal-list__wrapper').insertAdjacentHTML('beforeend', `
+                <div class="modal-list-item-teacher">
+                    <span>
+                        <h2 class="modal-teacher-name">${item.name}</h2>                    
+                        <h3 class="modal-teacher-lesson">${item.lesson}</h3>                    
+                    </span>
+                </div>
+            `)
+        })
+        document.querySelector('.modal-list-item-teacher').insertAdjacentHTML('beforeend', `
+            <button onClick={document.getElementById('modal').remove()} class="close-modal" type="button">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8.75903" y="29.9722" width="30" height="5" rx="2.5" transform="rotate(-45 8.75903 29.9722)" fill="#5269FF"/>
+                    <rect x="12.4456" y="8.76758" width="30" height="5" rx="2.5" transform="rotate(45 12.4456 8.76758)" fill="#5269FF"/>
+                </svg>
+            </button>
+        `)
     } 
     if (type == 'rating') {
         document.querySelector('.modal-list__wrapper').insertAdjacentHTML('afterbegin', `
