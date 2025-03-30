@@ -393,6 +393,8 @@ let openModal = function(type) {
                         </table>
                     </div>
                 </div>
+
+                <div class="rating-body__bars"></div>
             </div>
         `)
 
