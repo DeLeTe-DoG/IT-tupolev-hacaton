@@ -181,7 +181,7 @@ svg{
     max-height: 100%;
     width: 780px;
     height: 320px;
-    overflow: hidden;
+    overflow-x: scroll;
     white-space: nowrap;
 }
 #inner-screen-gallery{
@@ -195,6 +195,7 @@ svg{
 
 }
 .pages-of-gallery > img{
+    border-radius: 8px;
     height: 100%;
     width: 100%;
     display: flex;
