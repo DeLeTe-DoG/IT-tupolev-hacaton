@@ -305,7 +305,20 @@ let minElem = rating_data[0].all_rate
 for (let i = 0; i < rating_data.length; i++) {
     rating_data[i].all_rate = rating_data[i].activity_rate + rating_data[i].come_rate
 }
-let sorted_come_group = rating_data
+
+// console.log(sorted_activ_group)
+let sorted_group = rating_data
+for (let i = 0; i < sorted_group.length; i++) {
+    for (let j = i; j < sorted_group.length; j++) {
+      if (sorted_group[i].all_rate < sorted_group[j].all_rate) {
+        let temp = sorted_group[i]; 
+        sorted_group[i] = sorted_group[j];
+        sorted_group[j] = temp;
+      };
+    };
+};
+let fill_group = rating_data
+let sorted_come_group = fill_group
 for (let i = 0; i < sorted_come_group.length; i++) {
     for (let j = i; j < sorted_come_group.length; j++) {
       if (sorted_come_group[i].come_rate < sorted_come_group[j].come_rate) {
@@ -315,6 +328,7 @@ for (let i = 0; i < sorted_come_group.length; i++) {
       };
     };
 };
+
 let sorted_activ_group = rating_data
 for (let i = 0; i < sorted_activ_group.length; i++) {
     for (let j = i; j < sorted_activ_group.length; j++) {
@@ -322,17 +336,6 @@ for (let i = 0; i < sorted_activ_group.length; i++) {
         let temp = sorted_activ_group[i]; 
         sorted_activ_group[i] = sorted_activ_group[j];
         sorted_activ_group[j] = temp;
-      };
-    };
-};
-// console.log(sorted_activ_group)
-let sorted_group = rating_data
-for (let i = 0; i < sorted_group.length; i++) {
-    for (let j = i; j < sorted_group.length; j++) {
-      if (sorted_group[i].all_rate < sorted_group[j].all_rate) {
-        let temp = sorted_group[i]; 
-        sorted_group[i] = sorted_group[j];
-        sorted_group[j] = temp;
       };
     };
 };
