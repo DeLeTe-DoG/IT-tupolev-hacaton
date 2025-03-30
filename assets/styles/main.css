@@ -181,26 +181,23 @@ svg{
     max-height: 100%;
     width: 780px;
     height: 320px;
-    overflow-x: scroll;
+    overflow: hidden;
     white-space: nowrap;
 }
 #inner-screen-gallery{
     position: relative;
+    transition: .3s;
 }
 .pages-of-gallery{
     display: inline-block;
     margin: 10px;
     width: 780px;
     height: 310px;
-
 }
 .pages-of-gallery > img{
     border-radius: 8px;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-position: center;
     background-size: cover;
 }

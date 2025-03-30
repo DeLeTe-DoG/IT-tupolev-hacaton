@@ -1,18 +1,13 @@
 // footer actions ----------------
-let leftBtn = document.querySelector('#left-footer-btn')
-let rightBtn = document.querySelector('#right-footer-btn')
+let leftBtn = document.querySelector('#right-footer-btn')
+let rightBtn = document.querySelector('#left-footer-btn')
+let screen = document.querySelector('#inner-screen-gallery')
 
 currentItem = 1
 countOfItems = 5
 
-let item = `<div id="1" class="pages-of-gallery">
-            <img src="./assets/images/galleryFooter/footerImage.png" 
-            style="background-color: red;">
-            </img>
-            </div>`
-
 for (i = 1; i < countOfItems+1; i++) {
-    document.querySelector('#inner-screen-gallery').innerHTML += `
+        screen.innerHTML += `
             <div id="${i}" class="pages-of-gallery">
             <img src="./assets/images/galleryFooter/footerImage${i}.png" 
             style="background-color: red;">
@@ -20,7 +15,6 @@ for (i = 1; i < countOfItems+1; i++) {
             </div>
             `
 }
-
 
 leftBtn.addEventListener('click',() => {
     if (currentItem < countOfItems) {
@@ -41,4 +35,3 @@ rightBtn.addEventListener('click', () => {
     rightBtn.setAttribute('href', `#${currentItem}`)
     console.log(currentItem)
 })
-
