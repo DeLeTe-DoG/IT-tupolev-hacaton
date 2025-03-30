@@ -75,3 +75,48 @@
 .hidden-elem{
     display: none;
 }
+
+.rating-header{
+    width: 100%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-body{
+    background-color: #fff;
+    width: 100%;
+    height: max-content;
+    padding: 25px;
+}
+
+.rating-body__wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: stretch;
+}
+.rating-table{
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+/* .rating-table tr:first-child{
+    border-bottom: 1px solid black;
+} */
+.rating-table td{
+    padding: 15px;
+}
+.default-rating-wrap{
+    width: 100%;
+}
+.default-rating-wrap h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
