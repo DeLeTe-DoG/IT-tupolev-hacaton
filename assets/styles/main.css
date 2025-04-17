@@ -90,14 +90,29 @@ svg{
     width: 100%;
     height: 100%;
 }
-.first-block-content, .second-block-content{
+.block-content{
     width: 100%;
-    height: 180px;
+    height: 360px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.first-block-content{
+.main-block-text{
+    font-size: 30px;
+    padding: 5px;
+    font-weight: 500;
+}
+.main-images {
+    height: 320px;
+    max-width: 600px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.block-content{
     margin-bottom: 20px;
 }
 /* .hotiz-menu{
@@ -182,7 +197,9 @@ svg{
     overflow: hidden;
     white-space: nowrap;
 }
-#inner-screen-gallery{
+#inner-screen-gallery, .inner-main-image-section{
+    position: relative;
+    left: 0;
     position: relative;
     transition: .3s;
 }
@@ -190,7 +207,7 @@ svg{
     display: inline-block;
     padding: 10px;
     width: 780px;
-    height: 310px;
+    height: 280px;
 }
 .pages-of-gallery > img{
     border-radius: 8px;
@@ -200,6 +217,19 @@ svg{
     background-size: cover;
 }
 
+.main-pages-of-gallery{
+    display: inline-block;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+}
+.main-pages-of-gallery > img{
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
 
 /* ZACHETKA KEYBOARD */
 .input-wrapper{
